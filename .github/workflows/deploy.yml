@@ -2,6 +2,10 @@ name: Deploy on Github
 on:
   push:
     branches: [main]
+permissions:
+  contents: read # allow read
+  pages: write # allow write to pages
+  id-token: write # allow id
 jobs:
   deploy:
     runs-on: ubuntu-latest
