@@ -7,7 +7,11 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
 
-  return <>this page is deployed by github action</>;
+  return (
+    <>
+      <h1>this page is deployed by github action</h1>
+    </>
+  );
 }
 
 export default App;
