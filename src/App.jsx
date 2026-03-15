@@ -13,8 +13,8 @@ function App() {
   return (
     <>
       <UserAuthContextProvider>
-        <NyNav></NyNav>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
+          <NyNav></NyNav>
           <Routes>
             <Route>
               <Route
